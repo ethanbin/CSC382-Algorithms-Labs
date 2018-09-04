@@ -1,5 +1,6 @@
 package lab1;
 
+import java.io.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
@@ -7,6 +8,7 @@ import java.util.stream.IntStream;
 public class Main {
     final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
     final static int AVERAGE_TRAILS_COUNT = 50;
+    final static String TABLE_NAME = "results.csv";
 
     // return an array of specified size, filled with random numbers
 
@@ -41,56 +43,107 @@ public class Main {
         return list.stream().mapToInt(i->i).toArray();
     }
 
-    static int[] mergeSort(int[] arr){
-        return null;
+    static void mergeSort(int[] arr){
     }
 
-    static int[] insertionSort(int[] arr){
-        return null;
+    static void insertionSort(int[] arr){
     }
 
-    static int[] insertionSort(List<Integer> arr){
-        return null;
+    static void insertionSort(List<Integer> arr){
     }
 
-    public static void main(String[] args) {
-        // for each loop going through each n
+    // append or create and write data to a CSV file
+    static void printResults(double[] incResults, double[] decResults, double[] permResults, double[] randResults) throws IOException {
+        // begin creating and printing file
+        //PrintWriter pw = new PrintWriter(new File(TABLE_NAME));
+        FileWriter fw = new FileWriter(TABLE_NAME, true);
+        StringBuilder table = new StringBuilder();
+        // the line.separator thing will ensure the correct newline specific to the system running this is appended
+        table.append(System.getProperty("line.separator"));
+        table.append("BOUNDS,");
         for (int n : BOUNDS) {
+            table.append(n);
+            table.append(",");
+        }
+        table.append(System.getProperty("line.separator"));
+        StringBuilder inc = new StringBuilder("INC,");
+        StringBuilder dec = new StringBuilder("DEC,");
+        StringBuilder perm = new StringBuilder("PERM,");
+        StringBuilder rand = new StringBuilder("RAND,");
+        for (int i = 0; i < BOUNDS.length; i++){
+            inc.append(incResults[i]);
+            inc.append(',');
+            dec.append(decResults[i]);
+            dec.append(',');
+            perm.append(permResults[i]);
+            perm.append(',');
+            rand.append(randResults[i]);
+            rand.append(',');
+        }
+        table.append(inc);
+        table.append(System.getProperty("line.separator"));
+        table.append(dec);
+        table.append(System.getProperty("line.separator"));
+        table.append(perm);
+        table.append(System.getProperty("line.separator"));
+        table.append(rand);
+        table.append(System.getProperty("line.separator"));
+        System.out.println(table.toString());
+        fw.append(table.toString());
+        fw.close();
+    }
+
+    public static void main(String[] args) throws IOException {
+        // record results of sort on increasing, decreasing, randomly permuted, and randomly filled arrays respectively.
+        double[] incResults = new double[BOUNDS.length];
+        double[] decResults = new double[BOUNDS.length];
+        double[] permResults = new double[BOUNDS.length];
+        double[] randResults = new double[BOUNDS.length];
+        // loop going through each BOUND
+        for (int j = 0; j < BOUNDS.length; j++) {
+            int n = BOUNDS[j];
             long startTime, finishTime;
 
             // INCREASING ORDER
             int[] arr = new int[n];
-            for (int i = 1; i <= n; i++) arr[i - 1] = i;
+            for (int i = 1; i <= n; i++)
+                arr[i - 1] = i;
             // get time at start
             startTime = System.nanoTime();
             // sort
             insertionSort(arr);
             // get time at end
             finishTime = System.nanoTime();
+            incResults[j] = finishTime - startTime;
 
             // DECREASING ORDER
             arr = new int[n];
-            for (int i = 1; i <= n; i++) arr[i - 1] = n - i + 1;
+            for (int i = 1; i <= n; i++)
+                arr[i - 1] = n - i + 1;
             startTime = System.nanoTime();
             insertionSort(arr);
             finishTime = System.nanoTime();
+            decResults[j] = finishTime - startTime;
 
             // RANDOM PERMUTATION
             arr = permuteRandomly(n);
             startTime = System.nanoTime();
             insertionSort(arr);
             finishTime = System.nanoTime();
+            permResults[j] = finishTime - startTime;
 
             // RANDOM NUMBERS
-            long average = 0;
+            double average = 0;
             for (int i = 0; i < AVERAGE_TRAILS_COUNT; i++){
                 arr = randomFill(n);
                 startTime = System.nanoTime();
                 insertionSort(arr);
                 finishTime = System.nanoTime();
-                average = startTime - finishTime;
+                average += finishTime - startTime;
             }
             average /= AVERAGE_TRAILS_COUNT;
+            randResults[j] = average;
         }
+        printResults(incResults, decResults, permResults, randResults);
     }
 }
