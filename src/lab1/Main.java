@@ -46,7 +46,19 @@ public class Main {
     static void mergeSort(int[] arr){
     }
 
-    static void insertionSort(int[] arr){
+    // 3 8 1 4 9 0
+    static void insertionSort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int currentValue = arr[i];
+            // swap current value with previous index if current value is smaller
+            int j = i - 1;
+            for (; j >= 0 && currentValue < arr[j]; j--)
+                arr[j + 1] = arr[j];
+            arr[j + 1] = currentValue;
+        }
+        for (int i = 1; i < arr.length; i++)
+            if (arr[i] < arr[i-1]) System.err.printf("ERROR, SORT FAILED: %d placed after %d for array of size %d",
+                    arr[i], arr[i-1], arr.length);
     }
 
     static void insertionSort(List<Integer> arr){
@@ -70,14 +82,15 @@ public class Main {
         StringBuilder dec = new StringBuilder("DEC,");
         StringBuilder perm = new StringBuilder("PERM,");
         StringBuilder rand = new StringBuilder("RAND,");
+        // using string.format to avoid printing scientific notation on the numbers
         for (int i = 0; i < BOUNDS.length; i++){
-            inc.append(incResults[i]);
+            inc.append(String.format("%f", incResults[i]));
             inc.append(',');
-            dec.append(decResults[i]);
+            dec.append(String.format("%f", decResults[i]));
             dec.append(',');
-            perm.append(permResults[i]);
+            perm.append(String.format("%f", permResults[i]));
             perm.append(',');
-            rand.append(randResults[i]);
+            rand.append(String.format("%f", randResults[i]));
             rand.append(',');
         }
         table.append(inc);
@@ -110,11 +123,12 @@ public class Main {
                 arr[i - 1] = i;
             // get time at start
             startTime = System.nanoTime();
+            //startTime = System.currentTimeMillis();
             // sort
             insertionSort(arr);
             // get time at end
             finishTime = System.nanoTime();
-            incResults[j] = finishTime - startTime;
+            incResults[j] = (finishTime - startTime);
 
             // DECREASING ORDER
             arr = new int[n];
@@ -123,14 +137,14 @@ public class Main {
             startTime = System.nanoTime();
             insertionSort(arr);
             finishTime = System.nanoTime();
-            decResults[j] = finishTime - startTime;
+            decResults[j] = (finishTime - startTime);
 
             // RANDOM PERMUTATION
             arr = permuteRandomly(n);
             startTime = System.nanoTime();
             insertionSort(arr);
             finishTime = System.nanoTime();
-            permResults[j] = finishTime - startTime;
+            permResults[j] = (finishTime - startTime);
 
             // RANDOM NUMBERS
             double average = 0;
@@ -139,7 +153,7 @@ public class Main {
                 startTime = System.nanoTime();
                 insertionSort(arr);
                 finishTime = System.nanoTime();
-                average += finishTime - startTime;
+                average += (finishTime - startTime);
             }
             average /= AVERAGE_TRAILS_COUNT;
             randResults[j] = average;
