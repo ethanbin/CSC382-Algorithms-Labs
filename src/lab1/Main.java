@@ -115,40 +115,55 @@ public class Main {
         // loop going through each BOUND
         for (int j = 0; j < BOUNDS.length; j++) {
             int n = BOUNDS[j];
-            long startTime, finishTime;
+            int[] arr;
+            long startTime = 0, finishTime = 0, average = 0;
 
             // INCREASING ORDER
-            int[] arr = new int[n];
-            for (int i = 1; i <= n; i++)
-                arr[i - 1] = i;
-            // get time at start
-            startTime = System.nanoTime();
-            //startTime = System.currentTimeMillis();
-            // sort
-            insertionSort(arr);
-            // get time at end
-            finishTime = System.nanoTime();
-            incResults[j] = (finishTime - startTime);
+            for (int k = 0; k < AVERAGE_TRAILS_COUNT; k++) {
+                arr = new int[n];
+                // fill arr in increasing order
+                for (int i = 1; i <= n; i++)
+                    arr[i - 1] = i;
+                // get time at start
+                startTime = System.nanoTime();
+                // sort
+                insertionSort(arr);
+                // get time at end
+                finishTime = System.nanoTime();
+                average += finishTime - startTime;
+            }
+            average /= AVERAGE_TRAILS_COUNT;
+            incResults[j] = average;
+            average = 0;
 
             // DECREASING ORDER
-            arr = new int[n];
-            for (int i = 1; i <= n; i++)
-                arr[i - 1] = n - i + 1;
-            startTime = System.nanoTime();
-            insertionSort(arr);
-            finishTime = System.nanoTime();
-            decResults[j] = (finishTime - startTime);
+            for (int k = 0; k < AVERAGE_TRAILS_COUNT; k++) {
+                arr = new int[n];
+                for (int i = 1; i <= n; i++)
+                    arr[i - 1] = n - i + 1;
+                startTime = System.nanoTime();
+                insertionSort(arr);
+                finishTime = System.nanoTime();
+                average += finishTime - startTime;
+            }
+            average /= AVERAGE_TRAILS_COUNT;
+            decResults[j] = average;
+            average = 0;
 
             // RANDOM PERMUTATION
-            arr = permuteRandomly(n);
-            startTime = System.nanoTime();
-            insertionSort(arr);
-            finishTime = System.nanoTime();
-            permResults[j] = (finishTime - startTime);
+            for (int k = 0; k < AVERAGE_TRAILS_COUNT; k++) {
+                arr = permuteRandomly(n);
+                startTime = System.nanoTime();
+                insertionSort(arr);
+                finishTime = System.nanoTime();
+                average += finishTime - startTime;
+            }
+            average /= AVERAGE_TRAILS_COUNT;
+            permResults[j] = average;
+            average = 0;
 
             // RANDOM NUMBERS
-            double average = 0;
-            for (int i = 0; i < AVERAGE_TRAILS_COUNT; i++){
+            for (int k = 0; k < AVERAGE_TRAILS_COUNT; k++){
                 arr = randomFill(n);
                 startTime = System.nanoTime();
                 insertionSort(arr);
@@ -157,6 +172,7 @@ public class Main {
             }
             average /= AVERAGE_TRAILS_COUNT;
             randResults[j] = average;
+            average = 0;
         }
         printResults(incResults, decResults, permResults, randResults);
     }
