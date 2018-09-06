@@ -66,11 +66,12 @@ public class Main {
     }
 
     // append or create and write data to a CSV file
-    static void printResults(double[] incResults, double[] decResults, double[] permResults, double[] randResults) throws IOException {
+    static void printResults(String header, double[] incResults, double[] decResults, double[] permResults, double[] randResults) throws IOException {
         // begin creating and printing file
         //PrintWriter pw = new PrintWriter(new File(TABLE_NAME));
         FileWriter fw = new FileWriter(TABLE_NAME, true);
         StringBuilder table = new StringBuilder();
+        table.append(System.getProperty("line.separator") + header);
         // the line.separator thing will ensure the correct newline specific to the system running this is appended
         table.append(System.getProperty("line.separator"));
         table.append("BOUNDS,");
@@ -189,7 +190,19 @@ public class Main {
             randResults[j] = average;
             average = 0;
         }
-        printResults(incResults, decResults, permResults, randResults);
+        String header;
+        switch (sortCode){
+            case SORTCODE_INSERT:
+                header = "INSERTION SORT";
+                break;
+            case SORTCODE_MERGE:
+                header = "MERGE SORT";
+                break;
+            default:
+                header = "NO SORT COMPLETED";
+                break;
+        }
+        printResults(header, incResults, decResults, permResults, randResults);
     }
 
     public static void main(String[] args) throws IOException {
