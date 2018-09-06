@@ -9,6 +9,7 @@ public class Main {
     final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
     final static int AVERAGE_TRAILS_COUNT = 50;
     final static String TABLE_NAME = "results.csv";
+    final static int SORTCODE_MERGE = 0, SORTCODE_INSERT = 1;
 
     // return an array of specified size, filled with random numbers
 
@@ -82,15 +83,15 @@ public class Main {
         StringBuilder dec = new StringBuilder("DEC,");
         StringBuilder perm = new StringBuilder("PERM,");
         StringBuilder rand = new StringBuilder("RAND,");
-        // using string.format to avoid printing scientific notation on the numbers
+        // using string.format to avoid printing scientific notation on the numbers and needless zeros after decimal.
         for (int i = 0; i < BOUNDS.length; i++){
-            inc.append(String.format("%f", incResults[i]));
+            inc.append(String.format("%.0f", incResults[i]));
             inc.append(',');
-            dec.append(String.format("%f", decResults[i]));
+            dec.append(String.format("%.0f", decResults[i]));
             dec.append(',');
-            perm.append(String.format("%f", permResults[i]));
+            perm.append(String.format("%.0f", permResults[i]));
             perm.append(',');
-            rand.append(String.format("%f", randResults[i]));
+            rand.append(String.format("%.0f", randResults[i]));
             rand.append(',');
         }
         table.append(inc);
@@ -101,12 +102,26 @@ public class Main {
         table.append(System.getProperty("line.separator"));
         table.append(rand);
         table.append(System.getProperty("line.separator"));
-        System.out.println(table.toString());
         fw.append(table.toString());
         fw.close();
+        System.out.println(table.toString().replace(',', '\t'));
     }
 
-    public static void main(String[] args) throws IOException {
+    /**
+     * Execute the sort corresponding to the given sort code.
+     * The purpose of this is to help condense code.
+     * @param sortCode sort code
+     * @param arr int array to sort
+     */
+    static void determineSortType(int sortCode, int[] arr){
+        if (sortCode == SORTCODE_INSERT)
+            insertionSort(arr);
+        else if (sortCode == SORTCODE_MERGE)
+            mergeSort(arr);
+        else System.err.println("ERROR: INCORRECT SORTCODE GIVEN, NO SORT COMPLETED.");
+    }
+
+    static void testSort(int sortCode) throws IOException {
         // record results of sort on increasing, decreasing, randomly permuted, and randomly filled arrays respectively.
         double[] incResults = new double[BOUNDS.length];
         double[] decResults = new double[BOUNDS.length];
@@ -127,7 +142,7 @@ public class Main {
                 // get time at start
                 startTime = System.nanoTime();
                 // sort
-                insertionSort(arr);
+                determineSortType(sortCode, arr);
                 // get time at end
                 finishTime = System.nanoTime();
                 average += finishTime - startTime;
@@ -142,7 +157,7 @@ public class Main {
                 for (int i = 1; i <= n; i++)
                     arr[i - 1] = n - i + 1;
                 startTime = System.nanoTime();
-                insertionSort(arr);
+                determineSortType(sortCode, arr);
                 finishTime = System.nanoTime();
                 average += finishTime - startTime;
             }
@@ -154,7 +169,7 @@ public class Main {
             for (int k = 0; k < AVERAGE_TRAILS_COUNT; k++) {
                 arr = permuteRandomly(n);
                 startTime = System.nanoTime();
-                insertionSort(arr);
+                determineSortType(sortCode, arr);
                 finishTime = System.nanoTime();
                 average += finishTime - startTime;
             }
@@ -166,7 +181,7 @@ public class Main {
             for (int k = 0; k < AVERAGE_TRAILS_COUNT; k++){
                 arr = randomFill(n);
                 startTime = System.nanoTime();
-                insertionSort(arr);
+                determineSortType(sortCode, arr);
                 finishTime = System.nanoTime();
                 average += (finishTime - startTime);
             }
@@ -175,5 +190,10 @@ public class Main {
             average = 0;
         }
         printResults(incResults, decResults, permResults, randResults);
+    }
+
+    public static void main(String[] args) throws IOException {
+        testSort(SORTCODE_INSERT);
+        testSort(SORTCODE_MERGE);
     }
 }
