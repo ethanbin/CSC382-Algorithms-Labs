@@ -3,7 +3,6 @@ package lab1;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.IntStream;
 
 public class Main {
     final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
@@ -57,9 +56,9 @@ public class Main {
                 arr[j + 1] = arr[j];
             arr[j + 1] = currentValue;
         }
-        for (int i = 1; i < arr.length; i++)
-            if (arr[i] < arr[i-1]) System.err.printf("ERROR, SORT FAILED: %d placed after %d for array of size %d",
-                    arr[i], arr[i-1], arr.length);
+//        for (int i = 1; i < arr.length; i++)
+//            if (arr[i] < arr[i-1]) System.err.printf("ERROR, SORT FAILED: %d placed after %d for array of size %d",
+//                    arr[i], arr[i-1], arr.length);
     }
 
     static void insertionSort(List<Integer> arr){
