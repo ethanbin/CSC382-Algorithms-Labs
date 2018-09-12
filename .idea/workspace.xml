@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ace9289b-2ad9-4dbc-8a65-f2d51d54ac72" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,11 +18,47 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="901">
+              <caret line="252" lean-forward="true" selection-start-line="244" selection-end-line="252" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;method#randomFill#0;class#Main#0" />
+                <element signature="method#randomFill#0;class#Main#0" />
+                <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+                <element signature="method#permuteRandomly#0;class#Main#0" />
+                <element signature="method#insertionSort#0;class#Main#0" />
+                <element signature="method#printResults#0;class#Main#0" />
+                <element signature="docComment;method#determineSortType#0;class#Main#0" />
+                <element signature="method#determineSortType#0;class#Main#0" />
+                <element signature="method#testSort#0;class#Main#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="659" column="70" lean-forward="true" selection-start-line="659" selection-start-column="70" selection-end-line="659" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListIterator.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ListIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="193" column="9" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="908" selection-start-line="908" selection-end-line="908" />
             </state>
           </provider>
         </entry>
@@ -61,10 +98,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="209" />
+    <option name="x" value="88" />
     <option name="y" value="-8" />
-    <option name="width" value="531" />
-    <option name="height" value="735" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -180,7 +217,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21469000" />
+    <option name="totallyTimeSpent" value="35191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -188,6 +225,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32731137" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -195,11 +233,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32518598" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11145833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11145833" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -207,7 +245,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Designer" order="2" />
@@ -234,7 +272,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32817337" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15431164" />
     </layout>
@@ -247,7 +284,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -315,6 +352,15 @@
           <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -331,6 +377,15 @@
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -406,6 +461,15 @@
           <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -422,6 +486,15 @@
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -490,6 +563,15 @@
           <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -500,6 +582,15 @@
           <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -510,12 +601,20 @@
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collections.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/stream/IntStream.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/stream/Stream.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/ToIntFunction.java" />
@@ -524,12 +623,42 @@
     <entry file="file://$PROJECT_DIR$/results.csv" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/System.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/StringBuilder.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="659" column="70" lean-forward="true" selection-start-line="659" selection-start-column="70" selection-end-line="659" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="908" selection-start-line="908" selection-end-line="908" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="193" column="9" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="901">
+          <caret line="252" lean-forward="true" selection-start-line="244" selection-end-line="252" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Main#0" />
+            <element signature="method#randomFill#0;class#Main#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#permuteRandomly#0;class#Main#0" />
+            <element signature="method#insertionSort#0;class#Main#0" />
+            <element signature="method#printResults#0;class#Main#0" />
+            <element signature="docComment;method#determineSortType#0;class#Main#0" />
+            <element signature="method#determineSortType#0;class#Main#0" />
+            <element signature="method#testSort#0;class#Main#0" />
           </folding>
         </state>
       </provider>

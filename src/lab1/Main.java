@@ -38,15 +38,17 @@ public class Main {
     static int[] permuteRandomly(int size) throws ArrayIndexOutOfBoundsException{
         if (size < 1) throw new ArrayIndexOutOfBoundsException();
         List<Integer> list = new ArrayList<>(size);
+        // put elements in list
         for (int i = 1; i <= size; i++) list.add(i);
+        // use java's built-in method for shuffling collections
         Collections.shuffle(list);
+        // map list's Integer elements to int and cast to array
         return list.stream().mapToInt(i->i).toArray();
     }
 
     static void mergeSort(int[] arr){
     }
 
-    // 3 8 1 4 9 0
     static void insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int currentValue = arr[i];
@@ -61,7 +63,39 @@ public class Main {
 //                    arr[i], arr[i-1], arr.length);
     }
 
-    static void insertionSort(List<Integer> arr){
+    // 3 8 5 4 9 0
+    // i can iterate through a list, adding each element to a new list using insertion sort
+    // or i can just use for loop with get, using one list
+    static List<Integer> insertionSort(List<Integer> list){
+        if (list.size() < 2) return null;
+//        for (ListIterator it = list.listIterator(1); it.hasNext();) {
+//            int currentValue = (int) it.next();
+//            it.remove();
+//            ListIterator insertionIt = list.listIterator(it.previousIndex());
+//            while (insertionIt.hasPrevious() && currentValue < (Integer) insertionIt.previous());
+//            insertionIt.next();
+//            insertionIt.add(currentValue);
+//        }
+        List<Integer> ret = new LinkedList<>();
+        ListIterator it = list.listIterator();
+        ret.add((Integer)it.next());
+        while (it.hasNext()) {
+            int key = (int) it.next();
+            System.out.printf("key=%d%n",key);
+            ListIterator retIt = ret.listIterator();
+            int currentValue = (int) retIt.next();
+            //retIt.previous();
+            while (retIt.hasNext() && key > currentValue) {
+                currentValue = (int) retIt.next();
+            }
+            //if (retIt.nextIndex() == 1) retIt.next();
+            if (retIt.hasPrevious())
+                retIt.previous();
+            retIt.add(key);
+            for (int i = 0; i < ret.size(); i++) System.out.printf("%d, ", ret.get(i));
+            System.out.println();
+        }
+        return ret;
     }
 
     // append or create and write data to a CSV file
