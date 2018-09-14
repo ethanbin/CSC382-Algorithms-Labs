@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Main {
+public class SortTimeCounting {
     final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
     final static int AVERAGE_TRAILS_COUNT = 50;
     final static String TABLE_NAME = "results.csv";
@@ -116,6 +116,7 @@ public class Main {
     static void mergeSort(int[] arr){
         mergeSort(arr, 0, arr.length-1);
     }
+
     static void insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int currentValue = arr[i];
@@ -128,41 +129,6 @@ public class Main {
 //        for (int i = 1; i < arr.length; i++)
 //            if (arr[i] < arr[i-1]) System.err.printf("ERROR, SORT FAILED: %d placed after %d for array of size %d",
 //                    arr[i], arr[i-1], arr.length);
-    }
-
-    // 3 8 5 4 9 0
-    // i can iterate through a list, adding each element to a new list using insertion sort
-    // or i can just use for loop with get, using one list
-    static List<Integer> insertionSort(List<Integer> list){
-        if (list.size() < 2) return null;
-//        for (ListIterator it = list.listIterator(1); it.hasNext();) {
-//            int currentValue = (int) it.next();
-//            it.remove();
-//            ListIterator insertionIt = list.listIterator(it.previousIndex());
-//            while (insertionIt.hasPrevious() && currentValue < (Integer) insertionIt.previous());
-//            insertionIt.next();
-//            insertionIt.add(currentValue);
-//        }
-        List<Integer> ret = new LinkedList<>();
-        ListIterator it = list.listIterator();
-        ret.add((Integer)it.next());
-        while (it.hasNext()) {
-            int key = (int) it.next();
-            System.out.printf("key=%d%n",key);
-            ListIterator retIt = ret.listIterator();
-            int currentValue = (int) retIt.next();
-            //retIt.previous();
-            while (retIt.hasNext() && key > currentValue) {
-                currentValue = (int) retIt.next();
-            }
-            //if (retIt.nextIndex() == 1) retIt.next();
-            if (retIt.hasPrevious())
-                retIt.previous();
-            retIt.add(key);
-            for (int i = 0; i < ret.size(); i++) System.out.printf("%d, ", ret.get(i));
-            System.out.println();
-        }
-        return ret;
     }
 
     // append or create and write data to a CSV file
@@ -293,10 +259,10 @@ public class Main {
         String header;
         switch (sortCode){
             case SORTCODE_INSERT:
-                header = "INSERTION SORT";
+                header = "INSERTION SORT: TIME";
                 break;
             case SORTCODE_MERGE:
-                header = "MERGE SORT";
+                header = "MERGE SORT: TIME";
                 break;
             default:
                 header = "NO SORT COMPLETED";
