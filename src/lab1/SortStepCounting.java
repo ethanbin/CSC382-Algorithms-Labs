@@ -5,11 +5,9 @@ import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static lab1.SortTimeCounting.*;
+
 public class SortStepCounting {
-    final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
-    final static int AVERAGE_TRAILS_COUNT = 50;
-    final static String TABLE_NAME = "results.csv";
-    final static int SORTCODE_MERGE = 0, SORTCODE_INSERT = 1;
     static double stepCount = 0;
 
     // return an array of specified size, filled with random numbers
