@@ -2,13 +2,15 @@ package lab1;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class SortTimeCounting {
     final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
     final static int AVERAGE_TRAILS_COUNT = 50;
     final static String TABLE_NAME = "results.csv";
-    final static int SORTCODE_MERGE = 0, SORTCODE_INSERT = 1;
+    final static int SORTCODE_MERGE = 0, SORTCODE_INSERT = 1, SORTCODE_THREADED_MERGE = 2;
 
     // return an array of specified size, filled with random numbers
 
@@ -185,7 +187,11 @@ public class SortTimeCounting {
             insertionSort(arr);
         else if (sortCode == SORTCODE_MERGE)
             mergeSort(arr);
+        else if (sortCode == SORTCODE_THREADED_MERGE) {
+            Runnable r = new Runnable(() -> mergeSort(arr)).run();
+        }
         else System.err.println("ERROR: INCORRECT SORTCODE GIVEN, NO SORT COMPLETED.");
+        ExecutorService es = Executors.newCachedThreadPool();
     }
 
     static void testSort(int sortCode) throws IOException {
@@ -264,6 +270,9 @@ public class SortTimeCounting {
             case SORTCODE_MERGE:
                 header = "MERGE SORT: TIME";
                 break;
+            case SORTCODE_THREADED_MERGE:
+                header = "RECURSIVE MERGE SORT: TIME";
+                break;
             default:
                 header = "NO SORT COMPLETED";
                 break;
@@ -272,7 +281,8 @@ public class SortTimeCounting {
     }
 
     public static void main(String[] args) throws IOException {
-        testSort(SORTCODE_INSERT);
+        //testSort(SORTCODE_INSERT);
         testSort(SORTCODE_MERGE);
+        testSort(SORTCODE_THREADED_MERGE);
     }
 }
