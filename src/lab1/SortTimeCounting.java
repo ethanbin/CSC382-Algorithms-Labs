@@ -2,15 +2,13 @@ package lab1;
 
 import java.io.*;
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class SortTimeCounting {
     final static int[] BOUNDS = {100, 200, 300, 400, 500, 1000, 4000, 10000};
     final static int AVERAGE_TRAILS_COUNT = 50;
     final static String TABLE_NAME = "results.csv";
-    final static int SORTCODE_MERGE = 0, SORTCODE_INSERT = 1, SORTCODE_THREADED_MERGE = 2;
+    final static int SORTCODE_MERGE = 0, SORTCODE_INSERT = 1;
 
     // return an array of specified size, filled with random numbers
 
@@ -109,7 +107,6 @@ public class SortTimeCounting {
             merge(arr, start, mid, end);
         }
     }
-
     /**
      * Execute merge sort on an entire array.
      * Added for easy calling on entire array.
@@ -184,14 +181,10 @@ public class SortTimeCounting {
      */
     static void determineSortType(int sortCode, int[] arr){
         if (sortCode == SORTCODE_INSERT)
-            insertionSort(arr);
+            SortTimeCounting.insertionSort(arr);
         else if (sortCode == SORTCODE_MERGE)
-            mergeSort(arr);
-        else if (sortCode == SORTCODE_THREADED_MERGE) {
-            Runnable r = new Runnable(() -> mergeSort(arr)).run();
-        }
+            SortTimeCounting.mergeSort(arr);
         else System.err.println("ERROR: INCORRECT SORTCODE GIVEN, NO SORT COMPLETED.");
-        ExecutorService es = Executors.newCachedThreadPool();
     }
 
     static void testSort(int sortCode) throws IOException {
@@ -270,9 +263,6 @@ public class SortTimeCounting {
             case SORTCODE_MERGE:
                 header = "MERGE SORT: TIME";
                 break;
-            case SORTCODE_THREADED_MERGE:
-                header = "RECURSIVE MERGE SORT: TIME";
-                break;
             default:
                 header = "NO SORT COMPLETED";
                 break;
@@ -281,8 +271,28 @@ public class SortTimeCounting {
     }
 
     public static void main(String[] args) throws IOException {
-        //testSort(SORTCODE_INSERT);
-        testSort(SORTCODE_MERGE);
-        testSort(SORTCODE_THREADED_MERGE);
+        if (args.length == 0){
+            System.err.print("Error: no argument given. ");
+            System.out.print("Enter t to calculate time, s to calculate steps.");
+            return;
+        }
+
+        if (!args[0].equals("t") && !args[0].equals("s")){
+            System.err.print("Error: invalid argument given. ");
+            System.out.print("Enter t to calculate time, s to calculate steps.");
+            return;
+        }
+        if (args[0].equals("t")) {
+            System.out.println("Timing sorts...");
+            SortTimeCounting.testSort(SORTCODE_INSERT);
+            SortTimeCounting.testSort(SORTCODE_MERGE);
+            System.out.println("Complete.");
+        }
+        else if (args[0].equals("s")){
+            System.out.println("Counting steps...");
+            SortStepCounting.testSort(SORTCODE_INSERT);
+            SortStepCounting.testSort(SORTCODE_MERGE);
+            System.out.println("Complete.");
+        }
     }
 }
