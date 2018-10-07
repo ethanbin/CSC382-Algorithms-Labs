@@ -9,14 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Sorters/SorterSteps.java" line="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ace9289b-2ad9-4dbc-8a65-f2d51d54ac72" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab1/MergeSorterTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/LinkedSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/LinkedSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/SortStepCounting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/SortTimeCounting.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ace9289b-2ad9-4dbc-8a65-f2d51d54ac72" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -358,12 +351,12 @@
       <workItem from="1536100672839" duration="12117000" />
       <workItem from="1537121670168" duration="3635000" />
       <workItem from="1537229413840" duration="2731000" />
-      <workItem from="1538932686173" duration="9406000" />
+      <workItem from="1538932686173" duration="10006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53267000" />
+    <option name="totallyTimeSpent" value="53867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
