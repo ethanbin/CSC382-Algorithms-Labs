@@ -1,13 +1,13 @@
 package lab1;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static lab1.SortTimeCounting.*;
+import static lab1.MergeSorterTime.*;
 
 public class LinkedSorting {
+    /*
     static List<Integer> insertionSort(List<Integer> list) {
         for (int i = 1; i < list.size(); i++) {
             int key = list.get(i);
@@ -65,49 +65,6 @@ public class LinkedSorting {
 //            System.out.println();
         }
         return ret;
-    }
-
-    // append or create and write data to a CSV file
-    static void printResults(String header, double[] incResults, double[] decResults, double[] permResults, double[] randResults) throws IOException {
-        // begin creating and printing file
-        //PrintWriter pw = new PrintWriter(new File(TABLE_NAME));
-        FileWriter fw = new FileWriter(TABLE_NAME, true);
-        StringBuilder table = new StringBuilder();
-        table.append(System.getProperty("line.separator") + header);
-        // the line.separator thing will ensure the correct newline specific to the system running this is appended
-        table.append(System.getProperty("line.separator"));
-        table.append("BOUNDS,");
-        for (int n : BOUNDS) {
-            table.append(n);
-            table.append(",");
-        }
-        table.append(System.getProperty("line.separator"));
-        StringBuilder inc = new StringBuilder("INC,");
-        StringBuilder dec = new StringBuilder("DEC,");
-        StringBuilder perm = new StringBuilder("PERM,");
-        StringBuilder rand = new StringBuilder("RAND,");
-        // using string.format to avoid printing scientific notation on the numbers and needless zeros after decimal.
-        for (int i = 0; i < BOUNDS.length; i++){
-            inc.append(String.format("%.0f", incResults[i]));
-            inc.append(',');
-            dec.append(String.format("%.0f", decResults[i]));
-            dec.append(',');
-            perm.append(String.format("%.0f", permResults[i]));
-            perm.append(',');
-            rand.append(String.format("%.0f", randResults[i]));
-            rand.append(',');
-        }
-        table.append(inc);
-        table.append(System.getProperty("line.separator"));
-        table.append(dec);
-        table.append(System.getProperty("line.separator"));
-        table.append(perm);
-        table.append(System.getProperty("line.separator"));
-        table.append(rand);
-        table.append(System.getProperty("line.separator"));
-        fw.append(table.toString());
-        fw.close();
-        System.out.println(table.toString().replace(',', '\t'));
     }
 
     static void testSort() throws IOException {
@@ -204,4 +161,5 @@ public class LinkedSorting {
         System.out.println(it.previous());
         //testSort();
     }
+*/
 }
