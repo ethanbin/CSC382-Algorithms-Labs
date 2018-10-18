@@ -1,5 +1,7 @@
 package Main;
 import lab1.MergeSorterTime;
+import lab2.QuickSorterSteps;
+import lab2.QuickSorterTime;
 
 import java.io.IOException;
 
@@ -32,6 +34,6 @@ public class Main {
         }
         */
         System.out.println("Testing sorting methods...");
-        new MergeSorterTime().testSort();
+        new QuickSorterSteps().testSort();
     }
 }
