@@ -8,14 +8,31 @@
   <component name="ChangeListManager">
     <list default="true" id="ace9289b-2ad9-4dbc-8a65-f2d51d54ac72" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sorters/Sorter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sorters/SorterSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sorters/SorterTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab2/HeapSorterSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab2/HeapSorterTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab2/QuickSorterSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab2/QuickSorterTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorters/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorters/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorters/SorterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorters/SorterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorters/SorterTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorters/SorterTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/InsertionSorterTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/InsertionSorterTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/LinkedSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/LinkedSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/MergeSorterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/MergeSorterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/MergeSorterTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/MergeSorterTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/HeapSorterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab2/HeapSorterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/HeapSorterTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab2/HeapSorterTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/QuickSorterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab2/QuickSorterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/QuickSorterTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab2/QuickSorterTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab1/SortStepCounting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab1/SortTimeCounting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/HeapSorterSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/HeapSorterTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/QuickSorterSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/QuickSorterTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/submissions/lab2/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/Sorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/SorterSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submissions/lab2/SorterTime.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,40 +43,127 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4984375">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SorterSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sorters/SorterSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="method#testSort#0;class#SorterSteps#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SorterTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sorters/SorterTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="method#testSort#0;class#SorterTime#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickSorterTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab2/QuickSorterTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickSorterSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab2/QuickSorterSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="method#QuickSorterSteps#0;class#QuickSorterSteps#0" />
+                <element signature="method#partition#0;class#QuickSorterSteps#0" />
+                <element signature="method#quickSort#0;class#QuickSorterSteps#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeapSorterTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab2/HeapSorterTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="method#HeapSorterTime#0;class#HeapSorterTime#0" />
+                <element signature="method#buildMaxHeap#0;class#HeapSorterTime#0" />
+                <element signature="docComment;method#maxHeapify#0;class#HeapSorterTime#0" />
+                <element signature="method#maxHeapify#0;class#HeapSorterTime#0" />
+                <element signature="method#heapSort#0;class#HeapSorterTime#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSorterTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab1/MergeSorterTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="method#merge#0;class#MergeSorterTime#0" />
+                <element signature="method#mergeSort#0;class#MergeSorterTime#0" />
+                <element signature="docComment;method#mergeSort#1;class#MergeSorterTime#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSorterSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab1/MergeSorterSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedSorting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab1/LinkedSorting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertionSorterTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab1/InsertionSorterTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertionSorterSteps.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#161#162#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,19 +193,19 @@
         <option value="$PROJECT_DIR$/src/lab1/SortStepCounting.java" />
         <option value="$PROJECT_DIR$/src/lab1/InsertionSortSteps.java" />
         <option value="$PROJECT_DIR$/src/lab1/InsertionSortTime.java" />
-        <option value="$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java" />
-        <option value="$PROJECT_DIR$/src/Sorters/SorterTime.java" />
-        <option value="$PROJECT_DIR$/src/Sorters/SorterSteps.java" />
-        <option value="$PROJECT_DIR$/src/lab1/InsertionSorterTime.java" />
-        <option value="$PROJECT_DIR$/src/lab1/LinkedSorting.java" />
-        <option value="$PROJECT_DIR$/src/lab1/MergeSorterSteps.java" />
-        <option value="$PROJECT_DIR$/src/lab1/MergeSorterTime.java" />
-        <option value="$PROJECT_DIR$/src/lab2/QuickSorterTime.java" />
-        <option value="$PROJECT_DIR$/src/lab2/HeapSorterTime.java" />
         <option value="$PROJECT_DIR$/src/lab2/HeapSorterSteps.java" />
-        <option value="$PROJECT_DIR$/src/lab2/QuickSorterSteps.java" />
         <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/Sorters/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/Sorters/SorterSteps.java" />
+        <option value="$PROJECT_DIR$/src/Sorters/SorterTime.java" />
+        <option value="$PROJECT_DIR$/src/lab2/QuickSorterTime.java" />
+        <option value="$PROJECT_DIR$/src/lab2/QuickSorterSteps.java" />
+        <option value="$PROJECT_DIR$/src/lab2/HeapSorterTime.java" />
+        <option value="$PROJECT_DIR$/src/lab1/MergeSorterTime.java" />
+        <option value="$PROJECT_DIR$/src/lab1/MergeSorterSteps.java" />
+        <option value="$PROJECT_DIR$/src/lab1/LinkedSorting.java" />
+        <option value="$PROJECT_DIR$/src/lab1/InsertionSorterTime.java" />
+        <option value="$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java" />
       </list>
     </option>
   </component>
@@ -148,7 +252,19 @@
               <item name="CSC382-Algorithms-Labs" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC382-Algorithms-Labs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lab2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC382-Algorithms-Labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC382-Algorithms-Labs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC382-Algorithms-Labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC382-Algorithms-Labs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Sorters" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,18 +310,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="MergeSorterTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab1.MergeSorterTime" />
-      <module name="CSC382" />
-      <option name="PROGRAM_PARAMETERS" value="s" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Sorters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -225,10 +329,11 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Unnamed" type="JarApplication" factoryName="JAR Application">
+    <configuration name="382" type="JarApplication" factoryName="JAR Application">
       <option name="WORKING_DIRECTORY" value="D:\Users\Ethan\Documents\GitHub\CSC382-Algorithms-Labs" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <module name="CSC382" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -253,14 +358,12 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JAR Application.Unnamed" />
-      <item itemvalue="Application.MergeSorterTime" />
+      <item itemvalue="JAR Application.382" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MergeSorterTime" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +388,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64158000" />
+    <option name="totallyTimeSpent" value="66112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -485,135 +588,144 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ListIterator.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/lab1/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lab1/InsertionSorterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab1/LinkedSorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2684">
-          <caret line="164" column="1" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab1/MergeSorterSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab1/MergeSorterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="method#merge#0;class#MergeSorterTime#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sorters/SorterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab2/QuickSorterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab2/HeapSorterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" selection-start-line="19" selection-end-line="21" />
-          <folding>
-            <element signature="method#buildMaxHeap#0;class#HeapSorterTime#0" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab2/HeapSorterSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
           <folding>
+            <element signature="method#HeapSorterSteps#0;class#HeapSorterSteps#0" />
+            <element signature="method#buildMaxHeap#0;class#HeapSorterSteps#0" />
             <element signature="docComment;method#maxHeapify#0;class#HeapSorterSteps#0" />
             <element signature="method#maxHeapify#0;class#HeapSorterSteps#0" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab2/QuickSorterSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="method#partition#0;class#QuickSorterSteps#0" />
-            <element signature="method#quickSort#0;class#QuickSorterSteps#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sorters/SorterSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sorters/Sorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#randomFill#0;class#Sorter#0" />
-            <element signature="method#randomFill#0;class#Sorter#0" />
-            <element signature="docComment;method#permuteRandomly#0;class#Sorter#0" />
-            <element signature="method#permuteRandomly#0;class#Sorter#0" />
+            <element signature="method#heapSort#0;class#HeapSorterSteps#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state>
+          <caret column="13" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorters/Sorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#randomFill#0;class#Sorter#0" />
+            <element signature="method#randomFill#0;class#Sorter#0" />
+            <element signature="docComment;method#permuteRandomly#0;class#Sorter#0" />
+            <element signature="method#permuteRandomly#0;class#Sorter#0" />
+            <element signature="method#printResults#0;class#Sorter#0" />
+            <element signature="e#2287#2322#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorters/SorterSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="method#testSort#0;class#SorterSteps#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorters/SorterTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="method#testSort#0;class#SorterTime#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab2/QuickSorterTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab2/QuickSorterSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="method#QuickSorterSteps#0;class#QuickSorterSteps#0" />
+            <element signature="method#partition#0;class#QuickSorterSteps#0" />
+            <element signature="method#quickSort#0;class#QuickSorterSteps#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab2/HeapSorterTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="method#HeapSorterTime#0;class#HeapSorterTime#0" />
+            <element signature="method#buildMaxHeap#0;class#HeapSorterTime#0" />
+            <element signature="docComment;method#maxHeapify#0;class#HeapSorterTime#0" />
+            <element signature="method#maxHeapify#0;class#HeapSorterTime#0" />
+            <element signature="method#heapSort#0;class#HeapSorterTime#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/MergeSorterTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="method#merge#0;class#MergeSorterTime#0" />
+            <element signature="method#mergeSort#0;class#MergeSorterTime#0" />
+            <element signature="docComment;method#mergeSort#1;class#MergeSorterTime#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/MergeSorterSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/LinkedSorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/InsertionSorterTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/InsertionSorterSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
           </folding>
         </state>
       </provider>

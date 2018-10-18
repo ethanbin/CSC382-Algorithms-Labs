@@ -1,3 +1,4 @@
+// Written by Ethan Binyaminov
 package lab2;
 
 import Sorters.SorterTime;

@@ -1,6 +1,6 @@
+// Written by Ethan Binyaminov
 package lab1;
 import Sorters.SorterSteps;
-import java.io.IOException;
 
 public class InsertionSorterSteps extends SorterSteps {
     public InsertionSorterSteps() {

@@ -1,5 +1,7 @@
-This will allow you to compile the java files into an executable jar:
-1) compile the .java files by typing "javac *.java" into terminal without quotes
-2) type "jar -cfe project.jar *.class Main.class" in terminal without quotes to create the jar file.
+To create an executable jar, open console in the directory of this README, and enter the following:
+
+javac lab2/*.java Main/*.java Sorters/*.java
+jar cfe project.jar Main.Main Main/*.class lab2/*.class Sorters/*.class
 
 To run it, enter "java -jar project.jar"
+This will produce a CVS file named "results"
